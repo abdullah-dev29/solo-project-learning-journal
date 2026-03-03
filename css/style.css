@@ -119,6 +119,7 @@ nav ul {
 
 .blog img{
     width: 100%;
+    border-radius: 0.2em;
 }
 .view-more{
     padding: 0.625em 0.5em;
@@ -229,10 +230,6 @@ ul li,
 
 /* Media Query */
 @media(min-width: 768px){
-    /* body {
-        background-color: red;
-    } */
-
     .site-logo span{
         font-size: 1.125rem;
     }
