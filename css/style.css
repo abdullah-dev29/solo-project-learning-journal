@@ -21,17 +21,18 @@ header {
 .site-logo {
     padding: 0.5em;
     width: 60%;
-    /* max-width: 250px; */
+    max-width: 250px;
     display: flex;
     align-items: center;
     gap: 0.3em;
 }
 .site-logo img {
     width: 15%;
-    /* max-width: 90px; */
+    max-width: 90px;
 }
 .nav-bar {
     width: 40%;
+    max-width: 150px;
 }
 nav ul {
     display: flex;
@@ -42,25 +43,26 @@ nav ul {
 /* Main => hero section, blogs, view more*/
 .hero-post {
     width: 100%;
-    padding: 1.5em 1em;
+    aspect-ratio: 979 / 488;
     background-image: url('../images/hero-post-01.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 35vh;
     display: flex;
     align-items: flex-end;
+    padding: 1.5em 1em;
 }
 .hero-post h2 {
-    margin-top: 0.4em;
-    margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0.3em;
 }
 .hero-post p {
-    margin-top: 0.5em;
+    margin-top: 0;
     margin-bottom: 0;
 }
 .hero-post-wrapper {
-    padding-top: 1em;
+    padding: 1em;
+    max-width: 400px;
 }
 .main-posts {
     display: grid;
@@ -184,6 +186,7 @@ ul li {
 
 .view-more a {
     text-decoration: underline;
+    font-size: 0.8rem;
 }
 /* footer => site name, copy right*/
 .foot{
@@ -196,6 +199,7 @@ ul li {
 
 .copy-right{
     color: #D7D7D7;
+    font-size: 0.8rem;
 }
 /* header, main, foot => common settings */
 header a,
@@ -221,5 +225,74 @@ ul li,
 .hero-post p,
 .foot {
     line-height: 1.5;
+}
+
+/* Media Query */
+@media(min-width: 768px){
+    /* body {
+        background-color: red;
+    } */
+
+    .site-logo span{
+        font-size: 1.125rem;
+    }
+    ul li {
+        font-size: 0.875rem;
+    }
+
+    .hero-post {
+        aspect-ratio: 979 / 488;
+        max-height: 720px;             
+    }
+    .hero-post-wrapper{
+        max-width: 740px;
+        max-height: 300px;
+    }
+    .hero-post span {
+    font-size: 1rem;
+    }
+
+    .hero-post h2 {
+        font-size: 2rem;
+    }
+    .hero-post p{
+        max-width: 630px;
+        letter-spacing: 1px;
+    }
+    .main-posts {
+        display: grid;
+        grid-template-columns: 1em repeat(3, 1fr) 1em;
+        gap: 1em 0.8em;
+        grid-template-areas: 
+        ". ..... ..... ..... ."
+        ". blog1 blog2 blog3 ."
+        ". blog4 blog5 blog6 ."
+        ". ..... ..... ..... ."
+        ;
+    }
+    .blog span {
+        font-size: 1rem;
+    }
+
+    .blog h3 {
+        font-size: 1.5rem;
+    }
+
+    .blog p {
+        font-size: 1rem;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+    }
+    .view-more a {
+        font-size: 1rem;
+    }
+    .site-name {
+        color: #ECECEC;
+        font-size: 1.5rem;
+    }
+    .copy-right{
+        color: #D7D7D7;
+        font-size: 1rem;
+    }
 }
 
