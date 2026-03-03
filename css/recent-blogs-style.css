@@ -1,0 +1,84 @@
+/* CSS of Header, Main => main-posts, Footer  are link from style.css*/
+
+/* Layout */
+section,
+.disc{
+    margin-top: 0.5em;
+}
+.full-blog,
+.recent-posts{
+    display: flex;
+}
+.full-blog{
+    padding: 0.5em;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.blog-head{
+    width: 95%;
+}
+.blog-head,
+.disc{
+    padding: 1em 0.5em;
+}
+.blog-head h2,
+.blog-head p{
+    margin-top: 0.8em;
+}
+.blog-image{
+    width: 97%;
+}
+.blog-image,
+.disc h4{
+    margin: 0 auto;
+}
+.blog-image img{
+    width: 100%;
+    border-radius: 0.2em;
+}
+
+.blog-description{
+    padding: 0 0.2em;
+}
+.blog-head p,
+.disc p,
+.blog-head h2{
+    margin-bottom: 0;
+}
+.disc p{
+    margin-top: 1em;
+}
+.recent-posts{
+    padding: 0.625em 1.5625em;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Typography */
+.blog-head span{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+.blog-head h2{
+    font-size: 1.625rem;
+    line-height: 1.1;
+}
+.blog-head a{
+    text-decoration: none;
+    color: inherit;
+}
+.blog-head p,
+.disc p{
+    font-size: 0.875rem;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+}
+.disc h4,
+.recent-posts span{
+    font-size: 1rem;
+}
+.blog-head h2,
+.disc h4,
+.recent-posts span{
+    font-weight: 900;
+}
