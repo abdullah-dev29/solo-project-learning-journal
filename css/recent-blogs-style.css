@@ -82,3 +82,33 @@ section,
 .recent-posts span{
     font-weight: 900;
 }
+/* Media Query */
+@media (min-width: 768px) {
+    .blog-head,
+    .blog-description{
+        margin: 0 auto;
+        width: 85%;
+    }
+    .blog-image {
+        width: 94%;
+    }
+    .blog-head span{
+    font-size: 1rem;
+    }
+    .blog-head h2{
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+    .blog-head p,
+    .disc p{
+        font-size: 1rem;
+        letter-spacing: 0.3px;
+    }
+    .disc h4{
+        font-size: 1.5rem;
+    }
+    .recent-posts span {
+        font-size: 1.2rem;
+    }
+}
+
