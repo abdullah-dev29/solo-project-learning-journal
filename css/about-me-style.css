@@ -1,5 +1,6 @@
-/*  */
-/*  */
+/* CSS of Header, Main => main-posts, Footer are link from css/style.css*/
+/* Css of  Main => blog-description is link from css/recent-blogs-style.css*/
+
 /* layout */
 .about-me{
     display: flex;
@@ -42,9 +43,6 @@
     }
 }
 @media (min-width: 768px){
-    /* body{
-        background-color: red;
-    } */
     .about-me{
         flex-direction: row;
     }
